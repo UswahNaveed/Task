@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Common styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #800020; /* Changed to burgundy */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header img {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.side h5 {
+  font-size: 24px; /* Match size of h3 */
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.interpolation-section {
+  margin-bottom: 20px;
+}
+
+.image-pair {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.image-pair img {
+  width: 48%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .image-pair {
+    flex-direction: column;
+  }
+
+  .image-pair img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="PU logo2.png" alt="PU logo2">
+  <h1>Uswah Naveed</h1>
+</div>
+
+<div class="navbar">
+  <a href="#about-me" class="active">About Me</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h3>Profile:</h3>
+    <p>I am a hardworking and responsible person, pursuing opportunities to refine my expertise in Geographical Information Systems (GIS) and Remote Sensing (RS). Passionate about contributing to impactful work, I continuously strive to expand my technical and analytical skills.</p>
+    <h3>Contact Information</h3>
+    <p>Email: uswahnaveed668@gmail.com</p>
+    <p>Phone: +92 334 4959668</p>
+    <p>Address: Girls Hostel #4, Quaid e Azam Campus, University of Punjab</p>
+  </div>
+
+<section class="main">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science</strong></p>
+    <p>BS (Space Science), University of Punjab (2021-2025)</p>
+    <p>Subjects: GIS, RS, Meteorology, and Aerospace</p>
+    <p>Current CGPA: 3.92</p>
+    <p><strong>Intermediate (F.Sc)</strong></p>
+    <p>F.Sc (Pre-Engineering), Punjab College Sheikhupura (2018-2020)</p>
+    <p>Grade: A+ or First Division</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Digitization using ArcGIS and Google Earth</li>
+      <li>Flood Mapping and Analysis (GEE)</li>
+      <li>Vector Overlay and Neighborhood Analysis</li>
+      <li>Viewshed Analysis (ArcGIS)</li>
+      <li>SAR, Optical, and Thermal Image Processing (GEE/ERDAS/SNAP)</li>
+      <li>Weather Chart Analysis and Interpretation</li>
+      <li>Raster Weighted Overlay Analysis</li>
+      <li>Terrain Mapping and Hill Shading</li>
+      <li>Mapping of Flood and Precipitation Calculation</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <p><strong>Workshop:</strong> Global UGrad-Program (Sponsored by US Govt.)</p>
+    <p>During this program, I gained expertise in digitization of spatial data using ArcGIS and Google Earth, extraction of data from Google Maps, and creation of Heat Maps.</p>
+    <ul>
+      <li>Digitization of spatial data using ArcGIS and Google Earth</li>
+      <li>Extraction of data from Google Maps and creation of Heat Maps</li>
+      <li>Performing GIS Analysis using ArcGIS</li>
+      <li>Vector Overlay and Neighborhood Analysis</li>
+      <li>Satellite Imagery in RS using ERDAS and applications on GEE</li>
+      <li>Study of Flood Disaster Mapping and Precipitation Calculation</li>
+      <li>Weather Chart Analysis and Raster Weighted Overlay Analysis</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <ul>
+      <li>English</li>
+      <li>Urdu</li>
+      <li>Chinese</li>
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Learning</li>
+      <li>Travelling</li>
+    </ul>
+
+    <h2>Interpolation Maps</h2>
+    <div class="interpolation-section">
+      <h3>Spline</h3>
+      <div class="image-pair">
+        <img src="Sp_Arsenic_Le.png" alt="Sp_Arsenic_Le Map">
+        <img src="Sp_pH.png" alt=Sp_pH Map">
+      </div>
+    </div>
+    <div class="interpolation-section">
+      <h3>Ordinary Krigging</h3>
+      <div class="image-pair">
+        <img src="O_Krigging_Arsenic_Le.png" alt="O_Krigging_Arsenic_Le Map">
+        <img src="O_Krigging_Temp__C.png" alt="O_Krigging_Temp__C Map">
+      </div>
+    </div>
+<div class="interpolation-section">
+      <h3>Universal Krigging</h3>
+      <div class="image-pair">
+        <img src="U_Krigging_Arsenic_Le.png" alt="U_Krigging_Arsenic_Le Map">
+        <img src="U_Krigging_Temp__C.png" alt="U_Krigging_Temp__C Map">
+      </div>
+    </div>
+<div class="interpolation-section">
+      <h3>Natural Neighbor</h3>
+      <div class="image-pair">
+        <img src="NN_Arsenic_Le.png" alt="NN_Arsenic_Le Map">
+        <img src="NN_Temp__C.png" alt="NN_Temp__C Map">
+      </div>
+    </div>
+<div class="interpolation-section">
+      <h3>Spline with Barriers</h3>
+      <div class="image-pair">
+        <img src="SB_Arsenic_Le.png" alt="SB_Arsenic_Le Map">
+        <img src="SB_Temp__C.png" alt="SB_Temp__C Map">
+      </div>
+    </div>
+
+
+    <h2 class="section-heading">Pansharpening Images</h2>
+    <div class="interpolation-section">
+      <h3>Resolution Merge</h3>
+      <div class="image-pair">
+        <img src="rm_m_bi.png" alt="rm_m_bi image">
+        <img src="rm_pc_cc.png" alt="rm_pc_cc image">
+      </div>
+    </div>
+    <div class="interpolation-section">
+      <h3>Wavelet Resolution Merge</h3>
+      <div class="image-pair">
+        <img src="wrm_ihs_bi.png" alt="wrm_ihs_bi image">
+        <img src="wrm_pc_nn.png" alt="wrm_pc_nn image">
+      </div>
+    </div>
+
+    <h2 class="section-heading">Flood Inundation Heat Maps</h2>
+    <div class="interpolation-section">
+      <div class="image-pair">
+        <img src="2020_.png" alt="2020_ image">
+        <img src="Heatmap_2021.png" alt="Heatmap_2021 image">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>Footer</h2>
+  <p>&copy; 2024 Uswah Naveed. All rights reserved.</p>
+</div>
+
+</body>
+</html>
